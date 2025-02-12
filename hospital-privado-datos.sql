@@ -126,21 +126,28 @@ INSERT INTO "GruposApoyoPacientes" ("IDPaciente", "IDGrupoApoyo", "FechaUnion") 
 
 -- ResumenesAlta
 INSERT INTO "ResumenesAlta" ("IDPaciente", "FechaAlta", "Resumen") VALUES
+(1, '2023-01-20', 'Paciente estable, seguir tratamiento para hipertensión'),
 (4, '2023-04-15', 'Paciente estable, seguir tratamiento para migraña'),
 (5, '2023-05-23', 'Paciente con vértigo, requiere seguimiento neurológico');
 
 -- CuidadosUrgencia
 INSERT INTO "CuidadosUrgencias" ("IDPaciente", "FechaAdmision", "FechaAlta", "Estado") VALUES
+(1, '2023-01-15', '2023-01-20', 'Estable'),
+(2, '2023-02-20', NULL, 'En tratamiento'),
 (4, '2023-04-10', '2023-04-15', 'Estable'),
 (5, '2023-05-12', NULL, 'En tratamiento');
 
 -- ContactosEmergencia
 INSERT INTO "ContactosEmergencia" ("IDPaciente", "NombreContacto", "TelefonoContacto", "RelacionContacto") VALUES
+(1, 'Lucía Pérez', '555-9999', 'Esposa'),
+(2, 'Jorge Gómez', '555-8888', 'Hermano'),
 (4, 'Carlos Fernández', '555-1111', 'Esposo'),
 (5, 'Laura Díaz', '555-2222', 'Hermana');
 
 
 -- Turnos personal
 INSERT INTO "TurnosPersonal" ("IDPersonal", "TipoPersonal", "FechaTurno", "InicioTurno", "FinTurno") VALUES
+(1, 'Enfermera', '2023-01-15', '08:00', '16:00'),
+(2, 'Auxiliar', '2023-02-20', '12:00', '20:00'),
 (3, 'Enfermera', '2023-04-15', '08:00', '16:00'),
 (4, 'Auxiliar', '2023-05-12', '12:00', '20:00');
